@@ -1,3 +1,3 @@
 <?php
-    include "../View/front/khuyenmai.php";
+    include "View/front/khuyenmai.php";
 ?>

@@ -36,6 +36,7 @@ include "./Config/Connect.php";
     <link rel="stylesheet" href="./Assets/front/css/header.css">
     <link rel="shortcut icon" href="./Assets/front/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./Assets/front/css/footer.css">
+
     <title>Đồ Án Tốt Nghiẹp</title>
 </head>
 <style>

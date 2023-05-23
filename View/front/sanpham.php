@@ -75,7 +75,7 @@
 
                   <?php
                     if ($ac == 1) {
-                        echo '<h5 class="my-4 font-weight-bold" style="color: red;">
+                        echo '<h5 class="my-4 font-weight-bold text-right" style="color: red;">
                     ' . number_format($set['dongia']) . '<sup><u>đ</u></sup><br>
                     </h5>';
                     } else {

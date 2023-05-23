@@ -26,7 +26,7 @@
                 $gh = new giohang();
                 $gh->delete_items($key);
             }
-            include "View/front/cart.php";
+            include "./View/front/cart.php";
             break;
         case 'update_item':
             // gửi toàn bộ
@@ -40,7 +40,7 @@
                     }
                 }
             }
-            include "View/front/cart.php";
+            include "./View/front/cart.php";
             break;
     }
 ?>

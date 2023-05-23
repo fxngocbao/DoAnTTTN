@@ -79,13 +79,13 @@
                         $urs=new user();
                         $urs->updataCode($emailold,$codenew);
                         $flag=true;
-                        include "./View/login.php";
+                        include "./View/front/login.php";
                     }
                 }
                 if($flag==false)
                 {
                     echo '<script>alert("Code không tồn tại");</script>';
-                    include "./View/resetpw.php";
+                    include "./View/front/resetpw.php";
                 }
             }
     }
