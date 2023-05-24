@@ -68,7 +68,7 @@
               <div class="col-lg-4 col-md-4 mb-3 text-left">
 
                   <div class="view overlay z-depth-1-half">
-                      <img src="Assets/front/images<?php echo $set['hinh']; ?>" class="img-fluid" alt="">
+                      <img src="Assets/front/images/<?php echo $set['hinh']; ?>" class="img-fluid" alt="">
 
                       <div class="mask rgba-white-slight mt-2"><?php echo $set['tenhh']; ?></div>
                   </div>

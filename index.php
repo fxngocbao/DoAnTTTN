@@ -1,7 +1,11 @@
 <?php
 session_start();
-set_include_path(get_include_path().PATH_SEPARATOR.'Model/');
-spl_autoload_extensions('.php');
+// set_include_path(get_include_path().PATH_SEPARATOR.'Model/');
+// spl_autoload_extensions('.php');
+// spl_autoload_register();
+// include "./Config/Connect.php";
+set_include_path(get_include_path() . PATH_SEPARATOR . 'Model/'); // dang ky duong nhan voi model
+spl_autoload_extensions('.php'); //lay doi co ten .php 
 spl_autoload_register();
 include "./Config/Connect.php";
 ?>
@@ -36,10 +40,12 @@ include "./Config/Connect.php";
     <link rel="stylesheet" href="./Assets/front/css/header.css">
     <link rel="shortcut icon" href="./Assets/front/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./Assets/front/css/footer.css">
-
-    <title>Đồ Án Tốt Nghiẹp</title>
+    <title>Đồ Án Tốt Nghiệp</title>
 </head>
 <style>
+    body {
+        background-image: url('./Assets/front/images/body.jpg');
+    }
 </style>
 
 <body>
@@ -57,7 +63,7 @@ include "./Config/Connect.php";
             <div class="row">
                 <!-- hien thi noi dung đây -->
                 <?php
-                $ctrl ="home";
+                $ctrl = "home";
                 if (isset($_GET["action"]))
                     $ctrl = $_GET["action"];
                 include "Controller/" . $ctrl . ".php";

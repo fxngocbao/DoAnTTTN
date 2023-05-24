@@ -29,7 +29,7 @@
                     echo '<script>alert("Đăng ký thành công")</script>';
                     include "./View/front/home.php";
                 } else {
-                    echo '<script>alert("Đăng ký ko thành công")</script>';
+                    echo '<script>alert("Đăng ký không thành công")</script>';
                     include './View/front/registration.php';
                 }
             }

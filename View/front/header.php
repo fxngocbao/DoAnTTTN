@@ -25,7 +25,7 @@
 
         <div class="col-12">
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-warning bg-warning fixed-top" style="margin-bottom: 0px;">
+                <nav class="navbar navbar-expand-lg navbar-warning bg-danger fixed-top" style="margin-bottom: 0px;">
 
                     <!-- Right -->
                     <a class="navbar-brand" href="#">
