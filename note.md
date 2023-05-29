@@ -15,3 +15,6 @@ git checkout -b project (projecttest: tên nhánh)
 muốn lấy code tren github về:
 git clone <dường dẫn> <https://github.com/fxngocbao/webLuatVinasimex_PHP.git>
 ví dụ: git clone https://github.com/fxngocbao/webLuatVinasimex_PHP.git
+
+
+// tìm hiểu thu thập dữ liệu và phân tích ddữ liệu từ khách hàng
