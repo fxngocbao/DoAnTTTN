@@ -9,7 +9,7 @@
     $count = $result->rowCount(); //19
 
     // b2: cho limit tu cho dua vao thiet ke
-    $limit = 6;
+    $limit = 8;
 
     // b3: tinh ra so trang va start
     $p = new page();
@@ -98,7 +98,9 @@
                       <a href="index.php?action=sanpham&act=detail&id=<?php echo $set['mahh']; ?>">
                           <div class="btn btn-primary me-2">Xem ngay</div>
                       </a>
-                      <div class="btn btn-primary me-2">Mua hàng</div>
+                      <!-- <a href="index.php?action=sanpham&act=detail&id=<?php echo $set['mahh']; ?>">
+                        <div class="btn btn-primary me-2">Mua hàng</div>
+                      </a> -->
                   </form>
               </div>
           <?php

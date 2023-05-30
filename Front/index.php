@@ -1,16 +1,4 @@
 <?php
-// session_start();
-// // include 'Model/connect.php';
-// // include 'Model/hanghoa.php';
-// // include 'Model/giohang.php';
-// // include 'Model/user.php';
-// // include 'Model/hoadon.php';
-
-// // canh 1 
-// set_include_path(get_include_path() . PATH_SEPARATOR . 'Model/'); // dang ky duong nhan voi model
-// spl_autoload_extensions('.php'); //lay doi co ten .php 
-// spl_autoload_register();
-// include "./Config/Connect.php";
 session_start();
 // set_include_path(get_include_path().PATH_SEPARATOR.'Model/');
 // spl_autoload_extensions('.php');
