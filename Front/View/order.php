@@ -34,7 +34,7 @@
                 <td colspan="2">Số điện thoại: </td>
                 <td colspan="2"><?php echo $dt ?></td>
             </tr>
-            ?>
+        
         </table>
         <!-- Thông tin sản phầm -->
         <table class="table table-bordered">

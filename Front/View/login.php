@@ -33,7 +33,7 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-            <img class="d-block img-fluid" src="./Assets/Front/images/bn1.jpg" alt="First slide">
+            <img class="d-block img-fluid" src="../Assets/Front/images/bn1.jpg" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <div class="banner-text">
                   <h2>This is Heaven</h2>
@@ -42,7 +42,7 @@
               </div>
             </div>
             <div class="carousel-item">
-            <img class="d-block img-fluid" src="./Assets/Front/images/bn2.jpg" alt="First slide">
+            <img class="d-block img-fluid" src="../Assets/Front/images/bn2.jpg" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <div class="banner-text">
                   <h2>This is Heaven</h2>
@@ -51,7 +51,7 @@
               </div>
             </div>
             <div class="carousel-item">
-            <img class="d-block img-fluid" src="./Assets/Front/images/bn3.jpg" alt="First slide">
+            <img class="d-block img-fluid" src="../Assets/Front/images/bn3.jpg" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
                 <div class="banner-text">
                   <h2>This is Heaven</h2>

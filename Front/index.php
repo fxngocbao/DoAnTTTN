@@ -8,6 +8,8 @@ set_include_path(get_include_path() . PATH_SEPARATOR . 'Model/'); // dang ky duo
 spl_autoload_extensions('.php'); //lay doi co ten .php 
 spl_autoload_register();
 include "../Config/Connect.php";
+include "../PHPMailer/src/PHPMailer.php";
+include "../PHPMailer/src/SMTP.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

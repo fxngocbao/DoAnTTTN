@@ -1,32 +1,9 @@
 <header class="row no-gutters">
-    <!-- nav san pham -->
-    <section class="col-12" style="height:40px;">
-        <div class="col-12">
-            <div class="row">
-
-                <!-- test -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar" style="margin-bottom: 0px;">
-
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto smooth-scroll">
-
-                        </ul>
-                    </div>
-                </nav>
-                <!-- end test -->
-            </div>
-        </div>
-
-    </section>
     <!-- dang ky -->
     <section class="col-12">
-
         <div class="col-12">
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-warning bg-warning fixed-top" style="margin-bottom: 0px;">
-
+                <nav class="navbar navbar-expand-lg  navbar-warning bg-warning fixed-top" style="margin-bottom: 0px;">
                     <!-- Right -->
                     <a class="navbar-brand" href="#">
                         <img src="../Assets/Front/images/sol.png" alt="Avatar Logo" style="width:40px; margin-left: 100px;" class="rounded-pill">
@@ -42,16 +19,6 @@
                         <li class="nav-item">
                             <a href="" class="nav-link"><i class="bi bi-telephone-fill"></i>Liên hệ</a>
                         </li>
-                        <!-- <div class="dropdown">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Normal</a></li>
-                                <li><a class="dropdown-item active" href="#">Active</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
-                            </ul>
-                        </div> -->
                         <li class="nav-item">
                             <a href="index.php?action=dangky" class="nav-link">Đăng Ký</a>
                         </li>

@@ -40,12 +40,12 @@
 
       <!-- Heading -->
       <div class="row">
-          <div class="col-lg-8 text-right">
+          <div class="col-md-12 text-center">
               <?php
                 if ($ac == 0) {
-                    echo '<h3 class="mb-5 font-weight-bold" style="color: red;">SẢN PHẨM KHUYẾN MÃI</h3>';
+                    echo '<button style="color: white; width: 100%;height: 60px  ;text-decoration: none;" class="btn-danger">SẢN PHẨM KHUYẾN MÃI</button>';
                 } else {
-                    echo '<h3 class="mb-5 font-weight-bold" style="color: red;">TẤT CẢ SẢN PHẨM</h3>';
+                    echo '<button style="color: white; width: 100%;height: 60px  ;text-decoration: none;" class="btn-danger">TẤT CẢ SẢN PHẨM</button>';
                 }
                 ?>
           </div>

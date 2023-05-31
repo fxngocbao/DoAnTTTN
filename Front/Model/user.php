@@ -21,5 +21,47 @@
             $set = $result->fetch();
             return $set; 
         }
+        // comment
+        function insertcomment($mahh, $makh, $noidung)
+        {
+            $db = new connect();
+            $date = new DateTime("now");
+            $datecreate = $date->format("Y-m-d");
+            $query = "insert into binhluan1(mabl, mahh, makh, ngaybl, noidung) 
+            values(Null, $mahh, $makh, '$datecreate', '$noidung')";
+            $db->exec($query);
+        }
+
+        function getCountComment($mahh)
+        {
+            $db = new connect();
+            $select = "select count(mabl) from binhluan1 where mahh=$mahh";
+            $result = $db->getInstance($select);
+            return $result[0];
+        }
+        function getNoiDungComment($mahh)
+        {
+            $db = new connect();
+            $select = "select username, noidung, ngaybl from khachhang1
+            inner join binhluan1 b on makh=makh where mahh = $mahh";
+            $result = $db->getList($select);
+            return $result;
+        }
+
+        //kiểm tra email có tồn tại không 
+    function getEmail($email)
+    {
+        $db = new connect();
+        $select = "select * from khachhang1 where email = '$email'";
+        $result = $db->getInstance($select);
+        return $result;
     }
-?>
+
+    function updateEmail($emailold, $passnew)
+    {
+        $db = new connect();
+        echo $emailold;
+        $query = "update khachhang1 set matkhau = '$passnew' where email = '$emailold'";
+        $db->exec($query);
+    }
+    }
