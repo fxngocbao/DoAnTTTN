@@ -1,85 +1,67 @@
 <header class="row no-gutters">
     <!-- dang ky -->
-    <section class="col-12">
-        <div class="col-12">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg  navbar-warning bg-warning fixed-top" style="margin-bottom: 0px;">
-                    <!-- Right -->
-                    <a class="navbar-brand" href="#">
-                        <img src="../Assets/Front/images/sol.png" alt="Avatar Logo" style="width:40px; margin-left: 100px;" class="rounded-pill">
-                    </a>
-                    <ul class="navbar-nav ml-auto">
+    <section>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)" style="font-size:20px;  margin-left: 100px; margin-top: 20px;">MUSIC LIFE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse container" id="mynavbar">
+                    <ul class="navbar-nav me-auto" style="font-size:17px; ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?action=home">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.php?action=home" class="nav-link"><i class="bi bi-house-door-fill"></i>Trang chủ</a>
+                            <a class="nav-link" href="javascript:void(0)">Cửa hàng</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link"><i class="bi bi-bag-fill"></i>Cửa hàng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link"><i class="bi bi-telephone-fill"></i>Liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.php?action=dangky" class="nav-link">Đăng Ký</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.php?action=dangnhap" class="nav-link">Đăng Nhập</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.php?action=dangnhap&act=logout" class="nav-link">Đăng Xuất</a>
+                            <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
                         </li>
                         <li>
-                            <a href="index.php?action=giohang" class="nav-link"><img src="../Assets/Front/images/cartx2.png" width="30px" height="30px" alt=""></a>
+                            <a class="nav-link" href="index.php?action=dangky">Tài Khoản</a>
                         </li>
-                        <!-- <li>
-                            <p style="color: red; margin-top: 20px; margin-left: 0px;">(0)</p>
-
-                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?action=giohang">Giỏ hàng</a>
+                        </li>
                         <li>
-                        <?php 
-                                    $dem = 0;
-                                    if(isset($_SESSION['cart'])) {
-                                        $dem = count($_SESSION['cart']);
-                                    } else {
-                                        $dem = 0;
-                                    }
-                                ?>
-                            <p style="color: red; margin-top: 20px; margin-left: 0px;">(<?php echo $dem;?>)</p>
+                            <?php
+                            $dem = 0;
+                            if (isset($_SESSION['cart'])) {
+                                $dem = count($_SESSION['cart']);
+                            } else {
+                                $dem = 0;
+                            }
+                            ?>
+                            <p style="color: yellow; margin-top: 20px; margin-left: 0px;">(<?php echo $dem; ?>)</p>
 
                         </li>
                         <li>
                             <?php
-                                if(isset($_SESSION['makh']) && isset($_SESSION['tenkh'])):
-                                    $name=$_SESSION['tenkh'];   
-                                ?>
-                            <p style="color: red; margin-top: 20px; margin-left: 0px;"><?php echo "Xin chào !".$name ;?>
-                            </p>
+                            if (isset($_SESSION['makh']) && isset($_SESSION['tenkh'])) :
+                                $name = $_SESSION['tenkh'];
+                            ?>
+                                <p style="color: white; margin-top: 20px; margin-left: 0px;"><?php echo "Xin chào ! " . $name; ?>
+                                </p>
                             <?php
-                                else:
-                                    echo '<p style="color: red; margin-top: 20px; margin-left: 0px;">'."Xin Chào!".'</p>';
-                                ?>
+                            else :
+                                echo '<p style="color: yellow; margin-top: 20px; margin-left: 0px;">' . "Xin Chào!" . '</p>';
+                            ?>
                             <?php
-                                endif;
-                                ?>
+                            endif;
+                            ?>
                         </li>
-                        <li>
-                            <form class="form-inline" action="" method="post">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <!-- <a href="Trangchu.php?trang=tk"> -->
-                                        <input class="input-group-text" style="height: 35px;" type="submit" id="btsearch" value="Tìm Kiếm" />
-                                        <!-- </a> -->
-                                        <!-- <span class="input-group-text">@</span> -->
-                                        <input type="text" name="txtsearch" class="form-control" placeholder="Tìm Kiếm" />
-                                    </div>
-
-                            </form>
                     </ul>
-                </nav>
-
-                <!-- <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top"> -->
+                    <form class="" method="post">
+                        <div class="input-group">
+                            <input type="text" name="txtsearch" class="form-control" placeholder="Tìm Kiếm" />
+                            <input class="input-group-text" style="height: 35px;" type="submit" id="btsearch" value="Tìm Kiếm" />
+                        </div>
+                    </form>
+                    <span></span>
+                </div>
             </div>
-        </div>
+        </nav>
 
     </section>
 

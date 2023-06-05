@@ -122,10 +122,10 @@
         <?php
         if (isset($_SESSION['makh'])) {
         ?>
-            <input type="hidden" name="txtmahh" value="" />
+            <input type="hidden" name="txtmahh" value="<?php echo $mahh ?>" />
             <img src="../Assets/Front/images/people.png" width="50px" height="50px" ; />
-            <textarea class="input-field" type="text" name="comment" rows="2" cols="70" id="comment" placeholder="Thêm bình luận">  </textarea>
-            <input type="submit" class="btn btn-primary" id="submitButton" style="float: right;" value="Bình Luận" />
+            <textarea class="input-field comment" type="text" name="comment" rows="2" cols="70" id="comment" placeholder="Thêm bình luận">  </textarea>
+            <input type="submit" class="btn btn-primary button comment_btn" id="submitButton" style="float: right;" value="Bình Luận" />
 
         <?php
         } else {
@@ -169,9 +169,10 @@
             </div>
     <?php
         }
-    } else {
-        echo '<h5 class="">Chưa có bình luận nào !!</h5>';
-    }
+    } 
+    // else {
+    //     echo '<h5 class="">Chưa có bình luận nào !!</h5>';
+    // }
     ?>
 </div>
 <div class="row">

@@ -32,16 +32,21 @@ include "../PHPMailer/src/SMTP.php";
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- end link đăng nhập -->
     <link rel="stylesheet" type="text/css" href="../Assets/Front/css/header.css" />
     <link rel="stylesheet" type="text/css" href="../Assets/Front/css/footer.css" />
     <title>MusicArt - Đồ Án Tốt Nghiệp</title>
 </head>
 <style>
-    body{
+    body {
         background-image: url(../Assets/Front/images/body.jpg);
     }
 </style>
+
 <body>
     <!-- header -->
     <?php
