@@ -30,6 +30,17 @@
         $ac = 1;
     }
     ?>
+  <!-- Hàm tìm kiếm-->
+  <?php
+    if ($act == "timkiem") {
+        $ac = 1;
+    } else if ($act == 'filterproduct') {
+        $ac = 2;
+    } else {
+        $ac = 0;
+    }
+    ?>
+
 
   <!-- end số lượt xem san phẩm -->
   <!-- sản phẩm-->
@@ -51,6 +62,9 @@
           </div>
 
       </div>
+
+
+
       <!--Grid row-->
       <div class="row mt-5">
           <?php
@@ -98,9 +112,6 @@
                       <a href="index.php?action=sanpham&act=detail&id=<?php echo $set['mahh']; ?>">
                           <div class="btn btn-primary me-2">Xem ngay</div>
                       </a>
-                      <!-- <a href="index.php?action=sanpham&act=detail&id=<?php echo $set['mahh']; ?>">
-                        <div class="btn btn-primary me-2">Mua hàng</div>
-                      </a> -->
                   </form>
               </div>
           <?php

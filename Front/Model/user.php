@@ -31,7 +31,7 @@
             values(Null, $mahh, $makh, '$datecreate', '$noidung')";
             $db->exec($query);
         }
-
+    
         function getCountComment($mahh)
         {
             $db = new connect();
@@ -42,8 +42,8 @@
         function getNoiDungComment($mahh)
         {
             $db = new connect();
-            $select = "select username, noidung, ngaybl from khachhang1
-            inner join binhluan1 b on makh=makh where mahh = $mahh";
+            $select = "select a.username, b.noidung, b.ngaybl from khachhang1 a
+            inner join binhluan1 b on a.makh=b.makh where b.mahh = $mahh";
             $result = $db->getList($select);
             return $result;
         }

@@ -75,4 +75,83 @@
             return $result;
         }
 
+            // tìm kiếm
+    function getTimKiem($timkiem)
+    {
+        $db = new connect();
+        $select = "select * from hanghoa where tenhh like '%$timkiem%' ";
+        $result = $db->getList($select);
+        return $result;
+    }
+
+    function getFilterProduct($ValueFilter, $ValueFilterType)
+    {
+        $db = new connect();
+        switch ($ValueFilter) {
+            case 'name_up':
+                $select = "select * from hanghoa ORDER by tenhh asc ";
+                break;
+
+            case 'name_down':
+                $select = "select * from hanghoa ORDER by tenhh desc ";
+                break;
+
+            case 'price_up':
+                $select = "select * from hanghoa ORDER by dongia asc ";
+                break;
+
+            case 'price_down':
+                $select = "select * from hanghoa ORDER by dongia desc ";
+                break;
+            case 1:
+                break;
+            default:
+                $select = "select * from hanghoa where maloai = $ValueFilterType";
+                break;
+        }
+
+        $result = $db->getList($select);
+        return $result; //Kết quả trả về 
+    }
+    function getFilterProductPage($ValueFilter, $start, $limit)
+    {
+        $db = new connect();
+        if ($ValueFilter == 'name_up') {
+            $select = "select * from hanghoa ORDER by tenhh asc limit  $start, $limit";
+        } else if ($ValueFilter == 'name_down') {
+            $select = "select * from hanghoa ORDER by tenhh desc limit $start, $limit";
+        } else if ($ValueFilter == 'price_up') {
+            $select = "select * from hanghoa ORDER by dongia asc limit $start, $limit";
+        } else {
+            $select = "select * from hanghoa ORDER by dongia desc limit $start, $limit";
+        }
+
+        $result = $db->getList($select);
+        return $result; //Kết quả trả về 
+    }
+
+    // phân loại
+    function getHangHoaLoai($maloai)
+    {
+        $db = new connect();
+        $select = "select DISTINCT hinh from hanghoa where maloai= $maloai LIMIT 4";
+        $result = $db->getList($select);
+        return $result; //Kết quả trả về 
+    }
+    function getLoai()
+    {
+        $db =  new connect();
+        $select = "select DISTINCT maloai  from hanghoa";
+        $result = $db->getList($select);
+        return $result;
+    }
+    function getTenLoai($maloai)
+    {
+        $db = new connect();
+        $select = "select DISTINCT tenloai from loai where maloai= $maloai";
+        $result = $db->getInstance($select);
+        return $result; //Kết quả trả về 
+    }
+
+
     }

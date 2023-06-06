@@ -116,33 +116,34 @@
 
 <p class="float-left"><b>BÌnh luận </b></p>
 <hr>
-</div>
-<form action="" method="post">
-    <div class="row">
-        <?php
-        if (isset($_SESSION['makh'])) {
-        ?>
-            <input type="hidden" name="txtmahh" value="<?php echo $mahh ?>" />
-            <img src="../Assets/Front/images/people.png" width="50px" height="50px" ; />
-            <textarea class="input-field comment" type="text" name="comment" rows="2" cols="70" id="comment" placeholder="Thêm bình luận">  </textarea>
-            <input type="submit" class="btn btn-primary button comment_btn" id="submitButton" style="float: right;" value="Bình Luận" />
-
-        <?php
-        } else {
-        ?>
-            <div class="comment_container">
-                <div class="comment_content">
-                    <img src="../Assets/Front/images/people.png" width="50px" height="50px" ;  class="comment_avatar">
-                    <h5>Mời bạn đăng nhập để bình luận</h5>
-                </div>
-            </div>
-        <?php
-        }
-        ?>
+<?php
+if (isset($_SESSION['makh'])) {
+?>
+    <div class="comment_container">
+        <div class="comment_content">
+            <form class="comment_content" action="index.php?action=sanpham&act=detail&id=<?php echo $id ?>" method="post">
+                <input type="hidden" name="txtmahh" value="<?php echo $mahh ?>" />
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="100px" class="comment_avatar">
+                <textarea type="text" name="comment" class="input-field comment" rows="2" cols="70" placeholder="Thêm bình luận"></textarea>
+                    <button class="button comment_btn btn btn-primary" type="submit" >Bình luận</button>
+                <!-- <textarea class="input-field comment" type="text" name="comment" rows="2" cols="70" id="comment" placeholder="Thêm bình luận">  </textarea>
+                <button type="submit" class="btn btn-primary button comment_btn" id="submitButton" style="float: right;" value="Bình Luận"> </button> -->
+            </form>
+        </div>
     </div>
-</form>
-<div class="row">
-
+<?php
+} else {
+?>
+    <div class="comment_container">
+        <div class="comment_content">
+            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="100px" class="comment_avatar">
+            <h4>Mời bạn đăng nhập để bình luận</h4>
+        </div>
+    </div>
+<?php
+}
+?>
+<div class="area-comment">
     <?php
     if (isset($_GET['id'])) {
         $mahh = $_GET['id'];
@@ -150,15 +151,18 @@
         $sum = $usr->getCountComment($mahh);
     }
     ?>
-    <p class="float-left"><b>Các bình luận <?php echo $sum; ?></b></p>
     <hr>
+    <h5>
+        <b>Toàn bộ bình luận <?php echo $sum; ?></b>
+    </h5>
+
     <?php
     if ($sum > 0) {
         $result = $usr->getNoiDungComment($mahh);
         while ($set = $result->fetch()) {
     ?>
             <div class="p-1 flex input-comment">
-                <!-- <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="comment_avatar"> -->
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="comment_avatar">
                 <div class="bg-dark text-light area-info-comment">
                     <p><b><a href="#" class="text-danger"><?php echo $set['username'] ?></a> <br> <?php echo $set['ngaybl'] ?> </b><br>
                     </p>
@@ -169,14 +173,11 @@
             </div>
     <?php
         }
-    } 
-    // else {
-    //     echo '<h5 class="">Chưa có bình luận nào !!</h5>';
-    // }
+    } else {
+        echo '<h5 class="text-center">Chưa có bình luận nào !!</h5>';
+    }
     ?>
 </div>
-<div class="row">
-    <br />
-</div>
+
 </div>
 </section>

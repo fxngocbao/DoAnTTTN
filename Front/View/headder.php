@@ -22,6 +22,9 @@
                             <a class="nav-link" href="index.php?action=dangky">Tài Khoản</a>
                         </li>
                         <li class="nav-item">
+                            <a href="index.php?action=dangnhap&act=logout" class="nav-link">Đăng Xuất</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="index.php?action=giohang">Giỏ hàng</a>
                         </li>
                         <li>
@@ -54,7 +57,7 @@
                     </ul>
                     <form class="" method="post">
                         <div class="input-group">
-                            <input type="text" name="txtsearch" class="form-control" placeholder="Tìm Kiếm" />
+                            <input type="text" name="txtsearch" action="index.php?action=sanpham&act=timkiem" class="form-control" placeholder="Tìm Kiếm" />
                             <input class="input-group-text" style="height: 35px;" type="submit" id="btsearch" value="Tìm Kiếm" />
                         </div>
                     </form>
