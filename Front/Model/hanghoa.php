@@ -76,6 +76,32 @@
         }
 
             // tìm kiếm
+
+
+    // phân loại
+    function getHangHoaLoai($maloai)
+    {
+        $db = new connect();
+        $select = "select DISTINCT hinh from hanghoa where maloai= $maloai LIMIT 4";
+        $result = $db->getList($select);
+        return $result; //Kết quả trả về 
+    }
+    function getLoai()
+    {
+        $db =  new connect();
+        $select = "select DISTINCT maloai  from hanghoa";
+        $result = $db->getList($select);
+        return $result;
+    }
+    function getTenLoai($maloai)
+    {
+        $db = new connect();
+        $select = "select DISTINCT tenloai from loai where maloai= $maloai";
+        $result = $db->getInstance($select);
+        return $result; //Kết quả trả về 
+    }
+
+    // tìm kiếm
     function getTimKiem($timkiem)
     {
         $db = new connect();
@@ -129,29 +155,5 @@
         $result = $db->getList($select);
         return $result; //Kết quả trả về 
     }
-
-    // phân loại
-    function getHangHoaLoai($maloai)
-    {
-        $db = new connect();
-        $select = "select DISTINCT hinh from hanghoa where maloai= $maloai LIMIT 4";
-        $result = $db->getList($select);
-        return $result; //Kết quả trả về 
-    }
-    function getLoai()
-    {
-        $db =  new connect();
-        $select = "select DISTINCT maloai  from hanghoa";
-        $result = $db->getList($select);
-        return $result;
-    }
-    function getTenLoai($maloai)
-    {
-        $db = new connect();
-        $select = "select DISTINCT tenloai from loai where maloai= $maloai";
-        $result = $db->getInstance($select);
-        return $result; //Kết quả trả về 
-    }
-
 
     }

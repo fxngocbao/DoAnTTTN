@@ -23,7 +23,7 @@
           <input type="submit" name="submit_file" value="Submit">
        </form>
 <div class="row">
-  <table class="table">
+  <table class="table table-bordered">
     <thead>
       <tr class="table-primary">
         <th>Mã hàng</th>

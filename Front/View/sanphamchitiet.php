@@ -121,13 +121,11 @@ if (isset($_SESSION['makh'])) {
 ?>
     <div class="comment_container">
         <div class="comment_content">
-            <form class="comment_content" action="index.php?action=sanpham&act=detail&id=<?php echo $id ?>" method="post">
+        <form class="comment_content" action="index.php?action=sanpham&act=comment&id=<?php echo $id ?>" method="post">
                 <input type="hidden" name="txtmahh" value="<?php echo $mahh ?>" />
                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="100px" class="comment_avatar">
                 <textarea type="text" name="comment" class="input-field comment" rows="2" cols="70" placeholder="Thêm bình luận"></textarea>
                     <button class="button comment_btn btn btn-primary" type="submit" >Bình luận</button>
-                <!-- <textarea class="input-field comment" type="text" name="comment" rows="2" cols="70" id="comment" placeholder="Thêm bình luận">  </textarea>
-                <button type="submit" class="btn btn-primary button comment_btn" id="submitButton" style="float: right;" value="Bình Luận"> </button> -->
             </form>
         </div>
     </div>
@@ -162,7 +160,7 @@ if (isset($_SESSION['makh'])) {
         while ($set = $result->fetch()) {
     ?>
             <div class="p-1 flex input-comment">
-                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="comment_avatar">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="100px" class="comment_avatar">
                 <div class="bg-dark text-light area-info-comment">
                     <p><b><a href="#" class="text-danger"><?php echo $set['username'] ?></a> <br> <?php echo $set['ngaybl'] ?> </b><br>
                     </p>
@@ -173,11 +171,9 @@ if (isset($_SESSION['makh'])) {
             </div>
     <?php
         }
-    } else {
-        echo '<h5 class="text-center">Chưa có bình luận nào !!</h5>';
     }
     ?>
 </div>
 
-</div>
+<!-- </div> -->
 </section>

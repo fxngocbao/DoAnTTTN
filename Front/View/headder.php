@@ -55,12 +55,12 @@
                             ?>
                         </li>
                     </ul>
-                    <form class="" method="post">
+                    <!-- <form class="" method="post">
                         <div class="input-group">
                             <input type="text" name="txtsearch" action="index.php?action=sanpham&act=timkiem" class="form-control" placeholder="Tìm Kiếm" />
                             <input class="input-group-text" style="height: 35px;" type="submit" id="btsearch" value="Tìm Kiếm" />
                         </div>
-                    </form>
+                    </form> -->
                     <span></span>
                 </div>
             </div>

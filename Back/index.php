@@ -30,7 +30,11 @@ spl_autoload_register();// dưới dạng hướng đối tượng
     <link rel="stylesheet" type="text/css" href="../Content/CSS/Tour.css" />
     <title>Admin SanPham</title>
 </head>
-
+<style>
+    /* body {
+        background-image: url(../Assets/Front/images/body.jpg);
+    } */
+</style>
 <body>
 <!-- Thanh header tao menu -->
 <?php

@@ -2,7 +2,7 @@
     function uploadimage()
     {
         // B1: tạo đường dẫn chứa hình
-        $target_dir="../WebBC/Content/img/";
+        $target_dir="../Assets/Front/images/";
         
         // b2: lấy tên hình về để vào đường dẫn
         //"Content/imagetourdien/giaycongso.jpg"

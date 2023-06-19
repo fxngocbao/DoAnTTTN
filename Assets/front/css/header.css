@@ -466,5 +466,25 @@ a:hover{
     }
 
     /* footer */
+    .filter_pro {
+      justify-content: right;
+      align-items: center;
+      margin: 1rem;
+  }
+  
+  .search_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--first-color);
+      border-radius: 5px;
+      padding-inline: 10px;
+      margin-bottom: 2rem;
+      outline: none;
+      width: 240px;
+      font-size: var(--normal-font-size);
+      color: var(--text-color);
+      height: 40px;
+  }
    
   

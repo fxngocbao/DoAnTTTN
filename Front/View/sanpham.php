@@ -54,16 +54,60 @@
           <div class="col-md-12 text-center">
               <?php
                 if ($ac == 0) {
-                    echo '<button style="color: white; width: 100%;height: 60px  ;text-decoration: none;" class="btn-danger">SẢN PHẨM KHUYẾN MÃI</button>';
-                } else {
                     echo '<button style="color: white; width: 100%;height: 60px  ;text-decoration: none;" class="btn-danger">TẤT CẢ SẢN PHẨM</button>';
+                } else {
+                    echo '<button style="color: white; width: 100%;height: 60px  ;text-decoration: none;" class="btn-danger">SẢN PHẨM KHUYẾN MÃI</button>';
                 }
                 ?>
           </div>
-
       </div>
 
+      <!-- dang ky -->
+      <section>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
+              <div class="container-fluid">
+                  <div class="collapse navbar-collapse container" id="mynavbar">
+                      <ul class="navbar-nav me-auto" style="font-size:17px; ">
+                          <li class="nav-item">
+                              <form class="filter_pro flex" action="index.php?action=sanpham&act=filterproduct" method="post">
+                                  <select class="search_content" name="ValueFilterType" id="ValueFilter" onchange="this.form.submit()">
+                                      <option value="">Tìm kiếm theo loại:</option>
 
+                                      <?php
+                                        $result = $hh->getLoai();
+                                        while ($set = $result->fetch()) {
+                                            $tloai = $hh->getTenLoai($set['maloai']);
+                                            $tenloai = $tloai['tenloai'];
+                                        ?>
+                                          <option value="<?php echo $set['maloai'] ?>"><?php echo $tenloai ?></option>
+                                      <?php
+                                        }
+                                        ?>
+                                  </select>
+                              </form>
+                          </li>
+                          <li>
+                              <form class="filter_pro flex" action="index.php?action=sanpham&act=filterproduct" method="post">
+                                  <select class="search_content" name="ValueFilter" id="ValueFilter" onchange="this.form.submit()">
+                                      <option value="">Sắp xếp theo:</option>
+                                      <option value="price_up">Giá tăng dần</option>
+                                      <option value="price_down">Giá giảm dần</option>
+                                  </select>
+                              </form>
+                          </li>
+                          <li class="nav-item">
+                              <form class="search_content" action="index.php?action=sanpham&act=timkiem" method="post">
+                                  <input type="text" class="search_product" placeholder="Search here..." name="searchtxt">
+                                  <i class='bx bx-search search_icon'></i>
+                              </form>
+                          </li>
+                      </ul>
+                      <span></span>
+                  </div>
+              </div>
+          </nav>
+
+      </section>
 
       <!--Grid row-->
       <div class="row mt-5">
