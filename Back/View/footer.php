@@ -4,18 +4,21 @@
                 <div class="col-sm-12 col-md-6">
                     <h6>THÔNG TIN</h6>
                     <p class="text-justify">
-                        Công ty Cổ phần Đầu tư Thế Giới Di Động (MWG) là nhà bán lẻ số 1 Việt Nam về doanh thu và lợi
-                        nhuận, với mạng lưới hơn 3.400 cửa hàng trên toàn quốc. MWG vận hành các chuỗi bán lẻ
-                        thegioididong.com, Điện Máy Xanh, Bách Hoá Xanh. Ngoài ra, MWG đã mở rộng ra thị trường nước
-                        ngoài với chuỗi bán lẻ điện thoại và điện máy tại Campuchia.
+                        Công ty thương mại và kinh doanh website và app NNB là công ty tốt nhất chuyên phát triển website và app.
+                        Ngoài ra, chúng tôi còn nhận nâng cấp website, app và chuyên thiết kế các biển quảng cáo, banner. Hiện tại
+                        công ty chúng tôi đã có mặt trên 20 cơ sở văn phòng tại Việt Nam. Chúng tôi hiện đang mở rộng thị trường sang Campuchia, 
+                        Lào.
                     </p>
                 </div>
 
                 <div class="col-xs-6 col-md-3">
-                    <h6>SẢN PHẨM</h6>
+                    <h6>Chuyên thiết kế</h6>
                     <ul class="footer-links">
-                        <li><a href="http://scanfcode.com/category/c-language/">Giày</a></li>
-                        <li><a href="http://scanfcode.com/category/front-end-development/">Túi Xách</a></li>
+                        <li><a href="">Website</a></li>
+                        <li><a href="">App</a></li>
+                        <li><a href="">Poster</a></li>
+                        <li><a href="">Banner</a></li>
+                        <li><a href="">Bảo hành website và app</a></li>
                       
 
                     </ul>

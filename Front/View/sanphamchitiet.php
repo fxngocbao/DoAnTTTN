@@ -17,8 +17,6 @@
         <div class="container-fliud">
             <div class="wrapper row">
                 <form action="index.php?action=giohang" method="post">
-                    <!-- <input type="hidden" name="action" value="giohang&add_cart"/> -->
-
                     <div class="preview col-md-6">
                         <div class="tab-content">
                             <?php
@@ -160,13 +158,12 @@ if (isset($_SESSION['makh'])) {
         while ($set = $result->fetch()) {
     ?>
             <div class="p-1 flex input-comment">
-                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="100px" class="comment_avatar">
+            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="50px" class="comment_avatar">
                 <div class="bg-dark text-light area-info-comment">
-                    <p><b><a href="#" class="text-danger"><?php echo $set['username'] ?></a> <br> <?php echo $set['ngaybl'] ?> </b><br>
+                    <p><b><a href="#" class="text-danger"><?php echo $set['username'] ?></a></b><br> 
+                    Ngày bình luận: <b><?php echo $set['ngaybl'] ?></b>
                     </p>
-                </div>
-                <div class="area-text-comment text-light bg-dark scroll">
-                    <p><?php echo $set['noidung'] ?></p>
+                    <p>Nội dung bình luận: <b><?php echo $set['noidung'] ?></b></p>
                 </div>
             </div>
     <?php
@@ -175,5 +172,5 @@ if (isset($_SESSION['makh'])) {
     ?>
 </div>
 
-<!-- </div> -->
+</div>
 </section>

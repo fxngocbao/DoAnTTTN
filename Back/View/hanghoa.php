@@ -1,27 +1,6 @@
 <div class="col-md-4 col-md-offset-4">
   <h3><b>DANH SÁCH HÀNG HÓA</b></h3>
 </div>
-<div style="display: flex; justify-content: space-around;" class="row col-12">
-  <a href="index.php?action=hanghoa&act=themsp">
-    <h4>Thêm sản phẩm</h4>
-  </a>
-  <a href="index.php?action=hanghoa&act=themloaisp">
-    <h4>Thêm loại sản phẩm</h4>
-  </a>
-  <a href="index.php?action=hanghoa&act=hoadon">
-    <h4>Hoá đơn</h4>
-  </a>
-  <a href="index.php?action=hanghoa&act=cthoadon">
-    <h4>Chi tiết hoá đơn</h4>
-  </a>
-  <a href="index.php?action=dangnhap&act=doimk">
-    <h4>Đổi mật khẩu</h4>
-  </a>
-</div>
-<form action="" method="post" enctype="multipart/form-data">
-          <input type="file" name="file" />
-          <input type="submit" name="submit_file" value="Submit">
-       </form>
 <div class="row">
   <table class="table table-bordered">
     <thead>

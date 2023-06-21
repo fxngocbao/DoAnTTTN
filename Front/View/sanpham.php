@@ -89,7 +89,7 @@
                           <li>
                               <form class="filter_pro flex" action="index.php?action=sanpham&act=filterproduct" method="post">
                                   <select class="search_content" name="ValueFilter" id="ValueFilter" onchange="this.form.submit()">
-                                      <option value="">Sắp xếp theo:</option>
+                                      <option value="">Sắp xếp theo giá:</option>
                                       <option value="price_up">Giá tăng dần</option>
                                       <option value="price_down">Giá giảm dần</option>
                                   </select>

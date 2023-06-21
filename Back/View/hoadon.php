@@ -1,11 +1,5 @@
 
-<div  class="col-md-4 col-md-offset-4"><h3 ><b>DANH SÁCH HÀNG HÓA</b></h3></div>
-<div class="row col-12">
-<a href="index.php?action=hanghoa&act=themsp"><h4>Thêm sản phẩm</h4></a>
-<a href="index.php?action=hanghoa&act=themloaisp"><h4>Thêm loại sản phẩm</h4></a>
-<a href="index.php?action=hanghoa&act=hoadon"><h4>Hoá đơn</h4></a>
-<a href="index.php?action=hanghoa&act=cthoadon"><h4>Chi tiết hoá đơn</h4></a>
-</div>
+<div  class="col-md-4 col-md-offset-4"><h3 ><b>THỐNG KÊ HÓA ĐƠN</b></h3></div>
 <div class="row">
 <table class="table">
     <thead>

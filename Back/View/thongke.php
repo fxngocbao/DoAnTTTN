@@ -1,5 +1,6 @@
  
         <meta charset="UTF-8">
+        <h3>THỐNG KÊ SẢN PHẨM BÁN ĐƯỢC NHIỀU NHẤT</h3>
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -14,7 +15,6 @@
     var datahh=0;
     var slb=0;
     var rows=new Array();
-    
     // Lấy ra dòng
     <?php
       $hh=new hanghoa();

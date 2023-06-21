@@ -28,6 +28,7 @@ spl_autoload_register();// dưới dạng hướng đối tượng
     <!-- end -->
     <!-- end link đăng nhập -->
     <link rel="stylesheet" type="text/css" href="../Content/CSS/Tour.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/CSS/style.css" />
     <title>Admin SanPham</title>
 </head>
 <style>
